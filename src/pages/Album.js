@@ -82,17 +82,17 @@ const Album = () => {
         alt="albumcover"
         className="albumCover"
       />
-      <div className='albumDeets'>
+      <div className="albumDeets">
         <div>ALBUM</div>
-        <div className='title'>{album.title}</div>
-      <div className='artist'>
-        {albumDetails && JSON.parse(albumDetails[0].metadata).artist}
-      </div>
-    </div>
-      <div>
-        {albumDetails && JSON.parse(albumDetails[0].metadata).year}
-        {albumDetails && (albumDetails.length)} 
-      </div>
+        <div className="title">{album.title}</div>
+        <div className="artist">
+          {albumDetails && JSON.parse(albumDetails[0].metadata).artist}
+        </div>
+        <div>
+          {albumDetails && JSON.parse(albumDetails[0].metadata).year} •{" "}
+          {albumDetails && albumDetails.length} Songs
+        </div>
+        </div>
     </div>
   </div>
   </>
